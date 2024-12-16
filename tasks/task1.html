@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+
+      table {
+        border: 3px solid black;
+        border-collapse: collapse;
+
+      }
+
+      td {
+        border: 2px solid rgb(6, 6, 6);
+        padding: 10px;
+
+
+      }
+
+
+      thead {
+        background-color: #869960;
+        color: #f7f7f7;
+        font-weight: bold;
+      }
+
+      tbody {
+        text-align: center;
+
+
+        td:first-child {
+          text-align: left;
+        }
+
+        tr:nth-child(even) {
+          background-color: #dcdcdc;
+
+        }
+
+        tr:nth-child(odd) td:last-child {
+          background-color: #f1f1f1;
+        }
+      }
+
+      tfoot {
+        td:first-child {
+          font-weight: bold;
+          text-align: right;
+
+        }
+
+        td:last-child {
+          background-color: #f1f1f1;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Grocery Bill Items</p>
+    <table align="center">
+      <thead>
+        <td>Item Name</td>
+        <td>Quantity</td>
+        <td>Price</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Potatoes</td>
+          <td>51</td>
+          <td>&dollar;1.00</td>
+        </tr>
+        <tr>
+          <td>Nuts</td>
+          <td>20</td>
+          <td>&dollar;5</td>
+        </tr>
+        <tr>
+          <td>Onions</td>
+          <td>4</td>
+          <td>&dollar;3.00</td>
+        </tr>
+        <tr>
+          <td>Very long aekwardly named yet<br> still delicious item here</td>
+          <td style="vertical-align: top;">4</td>
+          <td style="vertical-align: top;">&dollar;3.00</td>
+        </tr>
+        <tr>
+          <td>Carrots</td>
+          <td>12</td>
+          <td>&dollar;2.99</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total price</td>
+          <td>&dollar;33.79 </td>
+        </tr>
+      </tfoot>
+    </table>
+
+
+  </body>
+
+</html>
